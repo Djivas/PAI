@@ -2,9 +2,12 @@ import { useEffect } from "react";
 import FlaskLogo from "../assets/flaskCoffee.jpg";
 import Receipt from "../assets/Receipt.svg";
 import { useReceiptStore } from "../store/receiptStore";
+// import { useReceiptStore } from "../store/receiptStoreWs";
 
 const OrderDetails = () => {
   const { data, fetchReceipt } = useReceiptStore();
+  //раскомментировать при использовании ws а другие наоборот
+  // const { data } = useReceiptStore();
 
   useEffect(() => {
     fetchReceipt("1");
