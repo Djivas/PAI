@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     // Disable WebSocket for HMR
     hmr: {
-      protocol: 'ws' // Set this to null or an empty string to disable WebSocket
+      protocol: 'null' // Set this to null or an empty string to disable WebSocket
     }
   }
 })
