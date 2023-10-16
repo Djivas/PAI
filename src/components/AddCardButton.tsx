@@ -28,7 +28,7 @@ const AddCardButton = () => {
         type="button"
         onClick={handleOpenModal}
       >
-      Прикрепить банковскую карту
+      Оплатить
       </button>
       {/* {isModalOpen && <Modal img={Check} title="Оплачено" content='При выходе вам потребуется заново вводить номер телефона и получить СМС' onClose={handleCloseModal} />} */}
       {isModalOpen && <ShowCaseModal stage={stage} nextStage={nextStage} />}
